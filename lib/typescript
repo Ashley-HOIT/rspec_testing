@@ -1,0 +1,134 @@
+Script started on Tue Jan 12 16:52:37 2016
+^[[A[?25h[0G[K[?25h[0G[K[?1034hbash-3.2$ DOCKER_URL=unix:///var/docker.sock irb[C[C[C[C[C[C[C[C[C[C[K
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ cd /etc/init/docker.conf
+bash: cd: /etc/init/docker.conf: No such file or directory
+bash-3.2$ cd /etc/init/docker.conf[K[K[K[K[K[K[K[K[K[K[K
+bash: cd: /etc/init/: No such file or directory
+bash-3.2$ cd /etc/init/[K[K[K[K[K[K
+bash-3.2$ cd init
+bash: cd: init: No such file or directory
+bash-3.2$ ls
+afpovertcp.cfg				krb5.keytab				pf.conf
+aliases					localtime				pf.os
+aliases.db				locate.rc				php-fpm.conf.default
+apache2					mach_init.d				php.ini.default
+asl					mach_init_per_login_session.d		postfix
+asl.conf				mach_init_per_user.d			ppp
+auto_home				mail.rc					profile
+auto_master				man.conf				protocols
+autofs.conf				manpaths				racoon
+bashrc					manpaths.d				rc.common
+com.apple.screensharing.agent.launchd	master.passwd				rc.imaging
+csh.cshrc				moduli					rc.netboot
+csh.login				nanorc					resolv.conf
+csh.logout				networks				rmtab
+cups					newsyslog.conf				rpc
+defaults				newsyslog.d				rtadvd.conf
+dnsextd.conf				nfs.conf				security
+efax.rc					notify.conf				services
+emond.d					ntp-restrict.conf			shells
+find.codes				ntp.conf				snmp
+fstab.hd				ntp_opendirectory.conf			ssh_config
+ftpd.conf				openldap				sshd_config
+ftpd.conf.default			openssl					sudo_lecture
+ftpusers				pam.d					sudoers
+gettytab				passwd					syslog.conf
+group					paths					ttys
+hosts					paths.d					xtab
+hosts.equiv				pcloud.cfg				zshenv
+irbrc					periodic
+kern_loader.conf			pf.anchors
+bash-3.2$ mkdir init
+mkdir: init: Permission denied
+bash-3.2$ sud [Ko vi /etc/init/docker.conf
+Password:
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"/etc/init/docker.conf" [New DIRECTORY][>c[2;1H[94m~                                                                                                                                        [3;1H~                                                                                                                                        [4;1H~                                                                                                                                        [5;1H~                                                                                                                                        [6;1H~                                                                                                                                        [7;1H~                                                                                                                                        [8;1H~                                                                                                                                        [9;1H~                                                                                                                                        [10;1H~                                                                                                                                        [11;1H~                                                                                                                                        [12;1H~                                                                                                                                        [13;1H~                                                                                                                                        [14;1H~                                                                                                                                        [15;1H~                                                                                                                                        [16;1H~                                                                                                                                        [17;1H~                                                                                                                                        [18;1H~                                                                                                                                        [19;1H~                                                                                                                                        [20;1H~                                                                                                                                        [21;1H~                                                                                                                                        [22;1H~                                                                                                                                        [23;1H~                                                                                                                                        [1;1H[?12l[?25h[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[1;1H[?12l[?25h[?25li[?12l[?25h[?25l[1;1H[K[1;1H[?12l[?25h[?25ldescription "Docker daemon"[2;1H[K[3;1Hstart on filesystem and started lxc-net[3;40H[K[4;1Hstop on runlevel [!2345][4;25H[K[5;1H[K[6;1Hrespawn[6;8H[K[7;1H[K[8;1Hscript[8;7H[K[9;1H    DOCKER=/usr/bin/$UPSTART_JOB[9;33H[K[10;1H    DOCKER_OPTS="-H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock" # Add this line[10;87H[K[11;1H    if [ -f /etc/default/$UPSTART_JOB ]; then[11;46H[K[12;1H        . /etc/default/$UPSTART_JOB[12;36H[K[13;1H    fi[13;7H[K[14;1H    "$DOCKER" -d $DOCKER_OPTS[14;30H[K[15;1Hend script[15;11H[K[15;11H[?12l[?25h[?25l[24;1H[K[15;10H[?12l[?25h[?25l[24;1HType  :quit<Enter>  to exit Vim[15;10H[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hwp[?25l"/etc/init/docker.conf"
+[97m[41m"/etc/init/docker.conf" E212: Can't open file for writing[m
+[32mPress ENTER or type command to continue[?12l[?25h[m[1;1H[2L[?25l[1;1Hdescription "Docker daemon"[24;1H[K[15;10H[?12l[?25h[?25l[24;1HType  :quit<Enter>  to exit Vim[15;10H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hq[?25l[97m[41mE37: No write since last change (add ! to override)[15;10H[?12l[?25h[?25l[m[24;1HType  :quit<Enter>  to exit Vim[24;32H[K[15;10H[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hq1[?25l[24;3H[K[24;3H[?12l[?25h![?25l[24;1H[K[24;1H[?1l>[?12l[?25h[?1049lbash-3.2$ sudo mkdir inint[K[Kt
+bash-3.2$ ls
+afpovertcp.cfg				kern_loader.conf			pf.anchors
+aliases					krb5.keytab				pf.conf
+aliases.db				localtime				pf.os
+apache2					locate.rc				php-fpm.conf.default
+asl					mach_init.d				php.ini.default
+asl.conf				mach_init_per_login_session.d		postfix
+auto_home				mach_init_per_user.d			ppp
+auto_master				mail.rc					profile
+autofs.conf				man.conf				protocols
+bashrc					manpaths				racoon
+com.apple.screensharing.agent.launchd	manpaths.d				rc.common
+csh.cshrc				master.passwd				rc.imaging
+csh.login				moduli					rc.netboot
+csh.logout				nanorc					resolv.conf
+cups					networks				rmtab
+defaults				newsyslog.conf				rpc
+dnsextd.conf				newsyslog.d				rtadvd.conf
+efax.rc					nfs.conf				security
+emond.d					notify.conf				services
+find.codes				ntp-restrict.conf			shells
+fstab.hd				ntp.conf				snmp
+ftpd.conf				ntp_opendirectory.conf			ssh_config
+ftpd.conf.default			openldap				sshd_config
+ftpusers				openssl					sudo_lecture
+gettytab				pam.d					sudoers
+group					passwd					syslog.conf
+hosts					paths					ttys
+hosts.equiv				paths.d					xtab
+init					pcloud.cfg				zshenv
+irbrc					periodic
+bash-3.2$ cd int[Kit/
+bash-3.2$ tocu[K[Kch[K[Kuch docker.conf
+touch: docker.conf: Permission denied
+bash-3.2$ touch docker.conf[1@d[1@u[1@d[1@o[1P[1P[1P[1P[1@s[1@u[1@d[1@o[1@ 
+bash-3.2$ sudo touch docker.conf[C[C[C[C[C[C[C[C[C[C[Kvi docker.conf 
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"docker.conf" [readonly] 0L, 0C[>c[2;1H[94m~                                                                                                                                        [3;1H~                                                                                                                                        [4;1H~                                                                                                                                        [5;1H~                                                                                                                                        [6;1H~                                                                                                                                        [7;1H~                                                                                                                                        [8;1H~                                                                                                                                        [9;1H~                                                                                                                                        [10;1H~                                                                                                                                        [11;1H~                                                                                                                                        [12;1H~                                                                                                                                        [13;1H~                                                                                                                                        [14;1H~                                                                                                                                        [15;1H~                                                                                                                                        [16;1H~                                                                                                                                        [17;1H~                                                                                                                                        [18;1H~                                                                                                                                        [19;1H~                                                                                                                                        [20;1H~                                                                                                                                        [21;1H~                                                                                                                                        [22;1H~                                                                                                                                        [23;1H~                                                                                                                                        [1;1H[?12l[?25h[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[24;14H[31mW10: Warning: Changing a readonly file[1;1H[?12l[?25h[?25l[mi[?12l[?25h[?25l[24;1H[K[1;1H[?12l[?25h[?25l[24;1HType  :quit<Enter>  to exit Vim[1;1H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hq[?25l[97m[41mE37: No write since last change (add ! to override)[1;1H[?12l[?25h[?25l[m[24;1H[K[24;1H:[?12l[?25hQ[?25l[24;2H[K[24;2H[?12l[?25h [1;1H[?25l[24;1HType  :quit<Enter>  to exit Vim[1;1H[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hq![?25l[24;1H[K[24;1H[?1l>[?12l[?25h[?1049lbash-3.2$ sudo dovdoido do[C[Ccker.conf 
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"docker.conf" 0L, 0C[>c[2;1H[94m~                                                                                                                                        [3;1H~                                                                                                                                        [4;1H~                                                                                                                                        [5;1H~                                                                                                                                        [6;1H~                                                                                                                                        [7;1H~                                                                                                                                        [8;1H~                                                                                                                                        [9;1H~                                                                                                                                        [10;1H~                                                                                                                                        [11;1H~                                                                                                                                        [12;1H~                                                                                                                                        [13;1H~                                                                                                                                        [14;1H~                                                                                                                                        [15;1H~                                                                                                                                        [16;1H~                                                                                                                                        [17;1H~                                                                                                                                        [18;1H~                                                                                                                                        [19;1H~                                                                                                                                        [20;1H~                                                                                                                                        [21;1H~                                                                                                                                        [22;1H~                                                                                                                                        [23;1H~                                                                                                                                        [1;1H[?12l[?25h[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[1;1H[?12l[?25h[?25li[?12l[?25h[?25l[1;1H[K[1;1H[?12l[?25h[?25ldocker.conf[?12l[?25h[?25l[1;11H[K[1;11H[?12l[?25h[?25l[1;10H[K[1;10H[?12l[?25h[?25l[1;9H[K[1;9H[?12l[?25h[?25l[1;8H[K[1;8H[?12l[?25h[?25l[1;7H[K[1;7H[?12l[?25h[?25l[1;6H[K[1;6H[?12l[?25h[?25l[1;5H[K[1;5H[?12l[?25h[?25l[1;4H[K[1;4H[?12l[?25h[?25l[1;3H[K[1;3H[?12l[?25h[?25l[1;2H[K[1;2H[?12l[?25h[?25l[1;1H[K[1;1H[?12l[?25h[?25ldescription "Docker daemon"[2;1H[K[3;1Hstart on filesystem and started lxc-net[3;40H[K[4;1Hstop on runlevel [!2345][4;25H[K[5;1H[K[6;1Hrespawn[6;8H[K[7;1H[K[8;1Hscript[8;7H[K[9;1H    DOCKER=/usr/bin/$UPSTART_JOB[9;33H[K[10;1H    DOCKER_OPTS="-H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock" # Add this line[10;87H[K[11;1H    if [ -f /etc/default/$UPSTART_JOB ]; then[11;46H[K[12;1H        . /etc/default/$UPSTART_JOB[12;36H[K[13;1H    fi[13;7H[K[14;1H    "$DOCKER" -d $DOCKER_OPTS[14;30H[K[15;1Hend script[15;11H[K[15;11H[?12l[?25h[?25l[24;1H[K[15;10H[?12l[?25h[?25l[24;1HType  :quit<Enter>  to exit Vim[15;10H[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hwp[?25l"docker.conf" 15L, 361C written
+[97m[41mE163: There is only one file to edit[m
+[32mPress ENTER or type command to continue[?12l[?25h[m[1;1H[2L[?25l[1;1Hdescription "Docker daemon"[24;1H[K[15;10H[?12l[?25h[?25l[24;1HType  :quit<Enter>  to exit Vim[15;10H[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hq[?25l[24;1H[K[24;1H[?1l>[?12l[?25h[?1049lbash-3.2$ vi docker.conf 
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"docker.conf" [readonly] 15L, 361C[>c[1;1Hdescription "Docker daemon"
+
+start on filesystem and started lxc-net
+stop on runlevel [!2345]
+
+respawn
+
+script
+    DOCKER=/usr/bin/$UPSTART_JOB
+    DOCKER_OPTS="-H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock" # Add this line
+    if [ -f /etc/default/$UPSTART_JOB ]; then[12;8H . /etc/default/$UPSTART_JOB
+    fi
+    "$DOCKER" -d $DOCKER_OPTS
+end script
+[94m~                                                                                                                                        [17;1H~                                                                                                                                        [18;1H~                                                                                                                                        [19;1H~                                                                                                                                        [20;1H~                                                                                                                                        [21;1H~                                                                                                                                        [22;1H~                                                                                                                                        [23;1H~                                                                                                                                        [1;1H[?12l[?25h
+
+
+
+
+
+
+
+
+
+
+
+
+
+[?25l[m[24;1HType  :quit<Enter>  to exit Vim[24;32H[K[15;1H[?12l[?25h[?25l[24;1H[K[24;1H:[?12l[?25hq[?25l[24;1H[K[24;1H[?1l>[?12l[?25h[?1049lbash-3.2$ restart docker
+bash: restart: command not found
+bash-3.2$ docker restart
+docker: "restart" requires a minimum of 1 argument.
+See 'docker restart --help'.
+
+Usage:	docker restart [OPTIONS] CONTAINER [CONTAINER...]
+
+Restart a container
+bash-3.2$ docker restart default
+Cannot connect to the Docker daemon. Is the docker daemon running on this host?
+Error: failed to restart containers: [default]
+bash-3.2$ docksa[Ktart
+bash: dockstart: command not found
+bash-3.2$ dockstarter restart defaultrestart docker[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstart[K[K
